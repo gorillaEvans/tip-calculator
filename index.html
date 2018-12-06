@@ -2,11 +2,42 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>JS Tip Calculator</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <div class="container">
+            <div class="calculator">
+                <h1 class="calculator__title">Tip Calculator</h1>
 
+                <div class="calculator__group">
+                    <label class="calculator__label" for="total-bill">Total Bill:</label>
+                    <input class="calculator__input" type="number" name="total-bill">
+                </div>
+
+                <div class="calculator__group">
+                    <label class="calculator__label" for="tip">Tip Percentage:</label>
+                    <input class="calculator__input" type="number" name="tip">
+                </div>
+
+                <div class="calculator__group">
+                    <label class="calculator__label" for="people">Split (number of people)</label>
+                    <input class="calculator__input" type="number" name="people">
+                </div>
+
+                <div class="calculator__group">
+                    <h2 class="calculator__label">New Bill (per person):</h2>
+                    <p class="calculator__result js-calculate-new-bill"></p>
+                </div>
+
+                <div class="calculator__group">
+                    <h2 class="calculator__label">Tip Amount (per person)</h2>
+                    <p class="calculator__result js-calculate-tip"></p>
+                </div>
+
+            </div>
         </div>
+
+        <script src="script.js"></script>
     </body>
 </html>
